@@ -1,0 +1,26 @@
+$brandColor: #30c28d;
+$paddingButtons: 10px 20px;
+$marginButtons: 10px 20px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: $brandColor;
+  text-align: center;
+}
+.paragraphs {
+  width: 80%;
+  margin: auto;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons > button {
+  margin: $marginButtons;
+  padding: $paddingButtons;
+  background-color: $brandColor;
+}

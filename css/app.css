@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #30c28d;
+  text-align: center;
+}
+
+.paragraphs {
+  width: 80%;
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons > button {
+  margin: 10px 20px;
+  padding: 10px 20px;
+  background-color: #30c28d;
+}
