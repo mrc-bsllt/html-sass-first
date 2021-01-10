@@ -1,26 +1,79 @@
-$brandColor: #30c28d;
-$paddingButtons: 10px 20px;
-$marginButtons: 10px 20px;
+$standardTextColor: #000000;
+$brandColor: #897248;
+$liPadding: 10px;
+$fontColorImage: #ffffff;
+$buttonsPadding: 10px;
 
+// generale
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: $standardTextColor;
 }
-h1 {
+a {
+  color: $standardTextColor;
+  text-decoration: none;
+}
+a:hover,
+i:hover {
   color: $brandColor;
+}
+ul li {
+  display: inline-block;
+  padding: $liPadding;
+  font-size: 20px;
+  font-weight: 700;
+}
+h2 {
+  color: $fontColorImage;
+  font-size: 60px;
+  font-weight: 300;
+}
+// header
+header {
+  padding: 50px 0;
   text-align: center;
 }
-.paragraphs {
-  width: 80%;
-  margin: auto;
+h1 {
+  font-size: 24px;
 }
-.buttons {
-  display: flex;
-  justify-content: center;
+p.location {
+  font-weight: 300;
 }
-.buttons > button {
-  margin: $marginButtons;
-  padding: $paddingButtons;
+// nav
+#social-list i {
+  font-size: 30px;
+}
+
+//main
+#enjoy {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url("https://maywooddemo.files.wordpress.com/2019/08/louis-hansel-nkmc3kluihu-unsplash-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container-text {
+  position: absolute;
+  top: 50%;
+  right: 55%;
+  transform: translatey(-50%);
+  width: 500px;
+}
+p.inside-image {
+  margin: 30px 0;
+  font-size: 20px;
+  color: $fontColorImage;
+}
+button {
+  padding: $buttonsPadding;
   background-color: $brandColor;
+  color: $fontColorImage;
+  font-weight: 700;
+  font-size: 17px;
+  border: none;
 }
